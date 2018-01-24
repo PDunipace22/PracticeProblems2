@@ -88,7 +88,32 @@ namespace PracticeProblems2
             //string customer = Console.ReadLine();
             //Console.WriteLine("{1} can buy {0} packages of diapers",total,customer);
 
-            
+            // Week 2 Day 2
+            //int[] numbers = new int[25];
+
+            //for(
+            //    int i = 0; i < numbers.Length;i++)
+            //{
+            //    Console.WriteLine("Enter a value for " + i);
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //}
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    if(i % 2 == 0)
+            //    {
+            //        Console.WriteLine(numbers[i]);
+            //    }
+
+            Console.WriteLine("How far would you like to add?");
+            int input = int.Parse(Console.ReadLine());
+            int[] number = new int[input];
+            int numSum = 0;
+            for (int i = 0; i < number.Length; i++)
+            {
+                numSum = (numSum + (i + 1));
+            }
+            Console.WriteLine(numSum);
+
+            }
         } 
     }
-}
